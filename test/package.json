@@ -1,0 +1,17 @@
+{
+  "name": "blueimp-nightwatch-example",
+  "private": true,
+  "version": "0.0.0",
+  "main": "globals.js",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "mysql": "^2.15.0",
+    "env2": "^2.1.1",
+    "nightwatch-video-recorder": "1.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
