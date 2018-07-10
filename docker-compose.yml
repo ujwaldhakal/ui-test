@@ -5,6 +5,8 @@ services:
     image: nginx:alpine
     volumes:
       - ./app:/usr/share/nginx/html
+    networks:
+      - pagevamp
   chromedriver:
     container_name: chromedriver
     image: blueimp/chromedriver
@@ -13,6 +15,8 @@ services:
       - EXPOSE_X11=true
     ports:
       - 5900:5900
+    networks:
+      - pagevamp
   nightwatch:
     container_name: nightwatch
     image: blueimp/nightwatch:0.9
@@ -24,26 +28,8 @@ services:
       - WAIT_FOR_HOSTS=nginx:80 chromedriver:4444 chromedriver:6060
     volumes:
       - ./test:/home/node
-  mysql1:
-        container_name: mysql1
-        restart: always
-        image: mysql:5.6
-        expose:
-            - "3306"
-        environment:
-          MYSQL_ROOT_PASSWORD: root
-          MYSQL_USER: root
-          MYSQL_PASSWORD: root
-          MYSQL_DATABASE: pagevamp
-  phpmyadmin1:
-          image: phpmyadmin/phpmyadmin
-          container_name: phpmyadmin1
-          links:
-            - mysql1
-          environment:
-            - PMA_ARBITRARY=1
-            - VIRTUAL_HOST=phpmyadmin.local
-            - PMA_PORT=3306
-          restart: always
-          expose:
-            - "8080"
+    networks:
+      - pagevamp
+networks:
+  pagevamp:
+    external: true
