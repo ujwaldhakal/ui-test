@@ -2,6 +2,7 @@
   "globals_path": "globals.js",
   "output_folder": false,
   "src_folders": ["specs"],
+  "custom_assertions_path": ["custom_assertions"],
   "test_settings": {
     "default": {
       "screenshots": {

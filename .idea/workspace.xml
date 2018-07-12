@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="796a4a1e-cea0-4a61-a0d4-3d4cf6ea5d7f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/custom_assertions/elementCount.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docker-compose.yml" afterPath="$PROJECT_DIR$/docker-compose.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/.env" afterPath="$PROJECT_DIR$/test/.env" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/globals.js" afterPath="$PROJECT_DIR$/test/globals.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/services/mysql.js" afterPath="$PROJECT_DIR$/test/services/mysql.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/nightwatch.json" afterPath="$PROJECT_DIR$/test/nightwatch.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/package.json" afterPath="$PROJECT_DIR$/test/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/specs/sublime.js" afterPath="$PROJECT_DIR$/test/specs/sublime.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,76 +26,60 @@
       <file leaf-file-name="sublime.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/specs/sublime.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1798">
-              <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state relative-caret-position="178">
+              <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test-index-page-_FAILED_Jul-11-2018-201130-GMT+0000.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/screenshots/sublime/test-index-page-_FAILED_Jul-11-2018-201130-GMT+0000.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test-index-page-_FAILED_Jul-11-2018-200726-GMT+0000.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/screenshots/sublime/test-index-page-_FAILED_Jul-11-2018-200726-GMT+0000.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mysql.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/services/mysql.js">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1798">
-              <caret line="62" column="45" lean-forward="false" selection-start-line="62" selection-start-column="45" selection-end-line="62" selection-end-column="45" />
+            <state relative-caret-position="365">
+              <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="example-2018-07-09T18-32-25.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/screenshots/example-2018-07-09T18-32-25.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="nightwatch.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/nightwatch.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="4" column="37" lean-forward="false" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sublime-theme-test_FAILED_Jul-11-2018-190619-GMT+0000.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/screenshots/sublime/sublime-theme-test_FAILED_Jul-11-2018-190619-GMT+0000.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="19" column="9" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="12" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sublime-theme-test_FAILED_Jul-11-2018-190440-GMT+0000.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/screenshots/sublime/sublime-theme-test_FAILED_Jul-11-2018-190440-GMT+0000.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="globals.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/globals.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="starting-browser_FAILED_Jul-11-2018-191905-GMT+0000.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/screenshots/sublime/starting-browser_FAILED_Jul-11-2018-191905-GMT+0000.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="starting-browser_FAILED_Jul-11-2018-191852-GMT+0000.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/screenshots/sublime/starting-browser_FAILED_Jul-11-2018-191852-GMT+0000.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="starting-browser_FAILED_Jul-11-2018-191723-GMT+0000.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/screenshots/sublime/starting-browser_FAILED_Jul-11-2018-191723-GMT+0000.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="elementCount.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/custom_assertions/elementCount.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -111,6 +96,9 @@
     <findStrings>
       <find>video</find>
       <find>update</find>
+      <find>elementC</find>
+      <find>api</find>
+      <find>here</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -120,15 +108,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/mysql.js" />
-        <option value="$PROJECT_DIR$/test/nightwatch.json" />
         <option value="$PROJECT_DIR$/test/specs/test.js" />
-        <option value="$PROJECT_DIR$/test/package.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/test/specs/example.js" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/test/globals.js" />
-        <option value="$PROJECT_DIR$/test/.env" />
         <option value="$PROJECT_DIR$/test/services/mysql.js" />
+        <option value="$PROJECT_DIR$/test/.env" />
+        <option value="$PROJECT_DIR$/test/package.json" />
+        <option value="$PROJECT_DIR$/test/globals.js" />
+        <option value="$PROJECT_DIR$/test/custom_assertions/elementCount.php" />
+        <option value="$PROJECT_DIR$/test/nightwatch.json" />
+        <option value="$PROJECT_DIR$/test/custom_assertions/elementCount.js" />
         <option value="$PROJECT_DIR$/test/specs/sublime.js" />
       </list>
     </option>
@@ -150,10 +140,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1963" />
-    <option name="y" value="24" />
-    <option name="width" value="1877" />
-    <option name="height" value="1056" />
+    <option name="x" value="38" />
+    <option name="y" value="21" />
+    <option name="width" value="1882" />
+    <option name="height" value="1059" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -171,7 +161,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -230,7 +219,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="screenshots" />
+              <option name="myItemId" value="services" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -248,16 +237,13 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="screenshots" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sublime" />
+              <option name="myItemId" value="custom_assertions" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -269,7 +255,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../docker-dev" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="global&#9;FILE&#9;file:///var/www/nightwatch/test/globals.js&#10;.env&#9;FILE&#9;file:///var/www/nightwatch/test/.env" />
+    <property name="SearchEverywhereHistoryKey" value=".env&#9;FILE&#9;file:///var/www/nightwatch/test/.env&#10;global&#9;FILE&#9;file:///var/www/nightwatch/test/globals.js" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -380,24 +366,25 @@
       <workItem from="1531245011728" duration="3083000" />
       <workItem from="1531294141293" duration="990000" />
       <workItem from="1531332765880" duration="7509000" />
-      <workItem from="1531369296404" duration="445000" />
+      <workItem from="1531369296404" duration="495000" />
+      <workItem from="1531414915372" duration="7088000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17714000" />
+    <option name="totallyTimeSpent" value="24852000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1963" y="24" width="1877" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="38" y="21" width="1882" height="1059" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31294376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3164488" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33010754" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3301179" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -421,26 +408,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysql.js" />
-    <entry file="file://$PROJECT_DIR$/test/screenshots/example-2018-07-10T16-27-06.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/nightwatch.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/.babelrc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -521,36 +488,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/screenshots/sublime/Sublime-theme-test_FAILED_Jul-11-2018-073500-GMT+0000.png" />
-    <entry file="file://$PROJECT_DIR$/test/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/globals.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/screenshots/sublime/testTitle_FAILED_Jul-11-2018-190307-GMT+0000.png" />
     <entry file="file://$PROJECT_DIR$/test/screenshots/sublime/Sublime-theme-test_FAILED_Jul-11-2018-072941-GMT+0000.png" />
     <entry file="file://$PROJECT_DIR$/test/screenshots/sublime/Sublime-theme-test_FAILED_Jul-11-2018-185210-GMT+0000.png" />
@@ -570,14 +507,6 @@
     <entry file="file://$PROJECT_DIR$/test/screenshots/sublime/sublime-theme-test_FAILED_Jul-11-2018-190528-GMT+0000.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/specs/sublime.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1798">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/screenshots/sublime/test-index-page-_FAILED_Jul-11-2018-201130-GMT+0000.png">
@@ -626,6 +555,72 @@
     <entry file="file://$PROJECT_DIR$/test/screenshots/sublime/starting-browser_FAILED_Jul-11-2018-191723-GMT+0000.png">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/screenshots/sublime/Testing-index-page-_FAILED_Jul-12-2018-182845-GMT+0000.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/screenshots/example-2018-07-10T16-27-06.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/globals.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="19" column="9" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/nightwatch.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="4" column="37" lean-forward="false" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/custom_assertions/elementCount.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/specs/sublime.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
