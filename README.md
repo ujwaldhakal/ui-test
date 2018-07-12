@@ -31,12 +31,3 @@ If you get a permission error for the videos/screenshots folders, make sure they
 are writable for the nightwatch process:
 
 ```sh
-mkdir -p test/screenshots test/videos
-chmod 777 test/screenshots test/videos
-```
-
-## License
-Released under the [MIT license](https://opensource.org/licenses/MIT).
-
-## Author
-[Sebastian Tschan](https://blueimp.net/)
