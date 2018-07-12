@@ -1,7 +1,7 @@
 import mysql from 'mysql'
 
 class mysqlProvider {
-    runQuery (sql, params = [], single = true) {
+    runQuery (sql, params = [], single = false) {
         const connection = mysql.createConnection({
             host: process.env.DB_HOST,
             user: process.env.DB_USERNAME,
@@ -42,12 +42,25 @@ class mysqlProvider {
 }
 
     update (table, changes, where) {
-        const sql = `update ${table} set ? where ?`
+        var totalSearchClause = Object.keys(where).length;
+
+        let sql = `update ${table} set ? where ?`
+
+        if(totalSearchClause > 1) {
+            var newWhereClause = [];
+            for (var key in where) {
+                newWhereClause.push({[key]:where[key]});
+            }
+            sql = `update ${table} set ? where ? and ?`
+
+            return this.runQuery(sql, [changes, newWhereClause[0], newWhereClause[1]])
+        }
+
         return this.runQuery(sql, [changes, where])
     }
 
-    statement (sql) {
-        return this.runQuery(sql)
+    statement (sql,singleRow = false) {
+        return this.runQuery(sql,[],singleRow)
     }
 }
 

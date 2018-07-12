@@ -9,4 +9,5 @@ module.exports = {
   afterEach: function (browser, done) {
     require('nightwatch-video-recorder').stop(browser, done)
   }
+
 }

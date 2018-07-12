@@ -5,6 +5,8 @@ services:
     image: nginx:alpine
     volumes:
       - ./app:/usr/share/nginx/html
+    networks:
+      - pagevamp
   chromedriver:
     container_name: chromedriver
     image: blueimp/chromedriver
@@ -13,6 +15,8 @@ services:
       - EXPOSE_X11=true
     ports:
       - 5900:5900
+    networks:
+      - pagevamp
   nightwatch:
     container_name: nightwatch
     image: blueimp/nightwatch:0.9
@@ -24,3 +28,9 @@ services:
       - WAIT_FOR_HOSTS=nginx:80 chromedriver:4444 chromedriver:6060
     volumes:
       - ./test:/home/node
+
+    networks:
+      - pagevamp
+networks:
+  pagevamp:
+    external: true
