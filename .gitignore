@@ -2,3 +2,5 @@
 /test/screenshots
 /test/videos
 /test/node_modules
+.idea/
+/.idea
