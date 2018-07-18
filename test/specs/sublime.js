@@ -13,13 +13,30 @@ module.exports = {
         sublime.setMongoData();
     },
 
+    'Testing events page ': function (browser) {
+        sublime.startBrowser(browser, builderUrl + '/events');
+        sublime.testIfEventPageWorks();
+
+    },
+
+    'Testing gallery page ': function (browser) {
+        sublime.startBrowser(browser, builderUrl + '/gallery');
+        sublime.testGalleryCountOnFirstLoad();
+    },
+
+    'Testing news page ': function (browser) {
+        sublime.startBrowser(browser, builderUrl + '/news');
+        sublime.testNewsPostCountOnFirstLoad();
+        sublime.testNewsPostCountAfterLoadMore();
+    },
+
     'Testing if current page is home page': function (browser) {
-        sublime.startBrowser(browser,builderUrl);
+        sublime.startBrowser(browser, builderUrl);
         sublime.testIfCurrentPageIsHomePage();
     },
 
     'Testing index page ': function (browser) {
-        sublime.startBrowser(browser,builderUrl + '/index');
+        sublime.startBrowser(browser, builderUrl + '/index');
         sublime.testIfBannerDescriptionIsCorrect();
         sublime.testIfReviewsSliderIsWorking();
         sublime.testIfReviewsPageIsPresent();
@@ -80,6 +97,41 @@ class Sublime {
             .waitForElementVisible('body', 5000); // wait for the body to be rendered
     }
 
+    testNewsPostCountOnFirstLoad() {
+        this.browser.assert.elementCount('.box', 10);
+    }
+
+    testIfEventPageWorks() {
+        this.browser.pause(5000);
+        this.browser.assert.containsText('.onfacebook a', 'VIEW EVENTS ON FACEBOOK');
+        this.browser.assert.elementPresent('.fb_iframe_widget span iframe') //this means review slider is active and working
+
+    }
+
+    async testGalleryCountOnFirstLoad() {
+        let albums = this.mongoData.albums.data;
+        let finalAlbums = albums.filter(function (album) {
+           return album.count > 0
+        });
+
+        this.browser.waitForElementNotVisible('#loader', 3000);
+        this.browser.assert.elementCount('.box', finalAlbums.length);
+    }
+
+    testNewsPostCountAfterLoadMore() {
+
+        let postCount = 10;
+        for(let i = 1; i < 4;i++) {
+            this.browser.execute('window.scrollTo(0,document.body.scrollHeight);');
+            this.browser.waitForElementNotVisible('#loader', 3000);
+            postCount = postCount + 10;
+            this.browser.assert.elementCount('.box', postCount);
+        }
+        this.browser.execute('window.scrollTo(0,document.body.scrollHeight);');
+        this.browser.waitForElementVisible('.onfacebook', 3000);
+    }
+
+
     testIfReviewsSliderIsWorking() {
         let reviewsMeta = JSON.parse(this.pageMetas['fb_reviews']);
         let ratings = this.mongoData.ratings.data;
@@ -116,7 +168,6 @@ class Sublime {
             // this.browser.expect.element('p.description').text.to.contain(aboutText); //text issue
         }
     }
-
 
 
     getProfilePicture() {
@@ -218,7 +269,7 @@ class Sublime {
     }
 }
 
-function nl2br (str, is_xhtml) {
+function nl2br(str, is_xhtml) {
     if (typeof str === 'undefined' || str === null) {
         return '';
     }
